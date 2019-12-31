@@ -1,7 +1,25 @@
-# Contact me
+export const inputStyle = {
+  width: '100%',
+  borderRadius: '4px',
+  padding: '12px 20px',
+  border: '1px solid #ccc',
+  fontSize: '1em'
+}; 
+export const submitStyle = {
+  ...inputStyle,
+  width: '12em',
+  fontSize: '1em'
+}
 
-<form action="https://formspree.io/kodemaan@gmail.com" method="post">
-  Name: <input type="text" name="name" />
-  Email: <input type="email" name="_replyto" />
-  Message<input type="text" name="message" />
+# Contact me
+<div style={{width: '50%'}}>
+<form action="https://formspree.io/kodemaan@gmail.com" method="POST">
+  <label for="name">Name</label>
+  <input type="text" name="name" style={inputStyle}/>
+  <label for="email">Email</label>
+  <input type="email" name="_replyto" style={inputStyle} />
+  <label for="message">Message</label>
+  <textarea type="text" name="message" style={inputStyle} />
+  <input type="submit" value="Send" style={submitStyle} />
 </form>
+</div>
