@@ -12,4 +12,14 @@ export const submitStyle = {
 }
 
 # Contact me
-Contact form coming soon! In the meantime contact me via kodemaan at gmail
+<div style={{width: '50%'}}>
+<form name="contact" netlify>
+  <label for="name">Name</label>
+  <input type="text" name="name" style={inputStyle}/>
+  <label for="email">Email</label>
+  <input type="email" name="_replyto" style={inputStyle} />
+  <label for="message">Message</label>
+  <textarea type="text" name="message" style={inputStyle} />
+  <input type="submit" value="Send" style={submitStyle} />
+</form>
+</div>
