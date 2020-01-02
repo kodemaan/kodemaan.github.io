@@ -13,7 +13,7 @@ export const submitStyle = {
 
 # Contact me
 <div style={{width: '50%'}}>
-<form name="contact" netlify>
+<form name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
   <label for="name">Name</label>
   <input type="text" name="name" style={inputStyle}/>
   <label for="email">Email</label>
@@ -21,5 +21,6 @@ export const submitStyle = {
   <label for="message">Message</label>
   <textarea type="text" name="message" style={inputStyle} />
   <input type="submit" value="Send" style={submitStyle} />
+  <input type="hidden" name="form-name" value="contact" />
 </form>
 </div>
