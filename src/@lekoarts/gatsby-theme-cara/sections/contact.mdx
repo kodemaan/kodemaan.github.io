@@ -13,13 +13,15 @@ export const submitStyle = {
 
 # Contact me
 <div style={{width: '50%'}}>
-<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+<form name="contact" method="post" action="https://mailthis.to/kodemaan@gmail.com" encType="multipart/form-data">
   <label for="name">Name</label>
   <input type="text" name="name" style={inputStyle}/>
   <label for="email">Email</label>
   <input type="email" name="_replyto" style={inputStyle} />
   <label for="message">Message</label>
   <textarea type="text" name="message" style={inputStyle} />
+  <input type="hidden" name="_after" value="https://kodemaan-personal-site.netlify.com/" />
+  <input type="hidden" name="_confirmation" value="Thank you for contacting me, I will respond shortly" />
   <input type="submit" value="Send" style={submitStyle} />
   <input type="hidden" name="form-name" value="contact" />
 </form>
