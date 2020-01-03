@@ -1,56 +1,19 @@
-export const inputStyle = {
-  width: '100%',
-  borderRadius: '4px',
-  padding: '12px 20px',
-  border: '1px solid #ccc',
-  fontSize: '1em'
-}; 
-export const submitStyle = {
-  ...inputStyle,
-  width: '12em',
-  fontSize: '1em'
-}
-export const fontAwesomeStyles = {
-  padding: '10px',
-  fontSize: '20px',
-  width: '40px',
-  borderRadius: '25px',
-  textAlign: 'center',
-  textDecoration: 'none',
-  margin: '5px 2px',
-}
-export const twitterButtonStyles = {
-  ...fontAwesomeStyles,
-  background: '#55acee',
-  color: 'white'
-}
-export const linkedInStyles = {
-  ...twitterButtonStyles,
-  background: '#007bb5'
-}
-export const githubStyles = {
-  ...twitterButtonStyles,
-  background: '#555'
-}
-
-# Contact
+## Contact
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 You can contact me via <a href="mailto:kodemaan@gmail.com">kodemaan@gmail.com</a>, the form below, or the following social media sites <br />
-<a href="https://twitter.com/kodemaan" class="fa fa-twitter" style={twitterButtonStyles}></a>
-<a href="https://www.linkedin.com/in/steven-smith-b4b5a41b/" class="fa fa-linkedin" style={linkedInStyles}></a>
-<a href="https://www.github.com/kodemaan/" class="fa fa-github" style={githubStyles}></a>
-<div style={{width: '50%'}}>
-<form name="contact" method="post" action="https://mailthis.to/kodemaan@gmail.com" encType="multipart/form-data">
+<a href="https://twitter.com/kodemaan" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/in/steven-smith-b4b5a41b/" class="fa fa-linkedin"></a>
+<a href="https://www.github.com/kodemaan/" class="fa fa-github"></a>
+<form name="contact" method="post" className="form" action="https://mailthis.to/kodemaan@gmail.com" encType="multipart/form-data">
   <label for="name">Name</label>
-  <input type="text" name="name" style={inputStyle}/>
+  <input type="text" name="name" className="input"/>
   <label for="email">Email</label>
-  <input type="email" name="_replyto" style={inputStyle} />
+  <input type="email" name="_replyto" className="input" />
   <label for="message">Message</label>
-  <textarea type="text" name="message" style={inputStyle} />
+  <textarea type="text" name="message" className="input" />
   <input type="hidden" name="_after" value="https://kodemaan-personal-site.netlify.com/" />
   <input type="hidden" name="_confirmation" value="Thank you for contacting me, I will respond shortly" />
-  <input type="submit" value="Send" style={submitStyle} />
+  <input type="submit" value="Send" className="input submit" />
   <input type="hidden" name="form-name" value="contact" />
 </form>
-</div>

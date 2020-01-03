@@ -1,0 +1,43 @@
+.input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+} 
+
+.form {
+  width: 50%;
+  margin-bottom: 5em;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .form {
+    width: 100%;
+  }
+}
+.submit {
+  width: 12em;
+  font-size: 1em;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white !important;
+}
+.fa-twitter {
+  background: #55acee;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+}
+.fa-github {
+  background: #555;
+}
