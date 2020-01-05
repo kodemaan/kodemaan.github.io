@@ -11,11 +11,35 @@ module.exports = {
     siteDescription: 'Personal website for Steven Smith',
     siteLanguage: 'en',
     siteImage: '/banner.jpg',
-    author: '@kodemaan'
+    author: '@kodemaan',
+    externalLinks: [
+      {
+        name: `Twitter`,
+        url: `https://www.twitter.com/kodemaan`
+      },
+      {
+        name: `Github`,
+        url: `https://www.github.com/kodemaan`
+      },
+      {
+        name: `Linkedin`,
+        url: `https://linkedin.com/in/steven-smith-b4b5a41b`
+      }
+    ],
+    navigation: [
+      {
+        title: `Contact`,
+        slug: `/contact`
+      },
+      {
+        title: `Projects`,
+        slug: `/projects`
+      }
+    ]
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
     },
     {
