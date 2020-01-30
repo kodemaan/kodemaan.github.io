@@ -4,7 +4,6 @@
 
 This is my personal site repo hosted on netlify via https://kodemaan-personal-site.netlify.com/
 
-
 ## Techology used
 
 [Gatsby JS](https://www.gatsbyjs.org/).
