@@ -2,7 +2,7 @@
   My Personal Website
 </h1>
 
-This is my personal site repo hosted on netlify via https://kodemaan-personal-site.netlify.com/
+This is my personal site repo hosted on netlify via https://kodemaan-personal-site.netlify.app/
 
 
 ## Techology used
